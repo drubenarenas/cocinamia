@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Comida Fit Ideal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Color de respaldo si la imagen no carga */
+            background-image: url('fotos_comida/logo_fondo.jpg'); /* Asegúrate que este sea el nombre correcto que funciona */
+            background-size: cover; /* Cubre todo el fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-position: center center; /* Centra la imagen */
+            background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex; /* Para alinear el logo y el título */
+            align-items: center; /* Centrar verticalmente */
+            justify-content: center; /* Centrar horizontalmente */
+        }
+        header h1 {
+            margin: 0 15px; /* Añadir espacio entre el logo y el título */
+            color: #2E7D32; /* Un verde saludable */
+            font-size: 2.5em; /* Ajustar si es necesario */
+        }
+        .intro {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .intro h2 {
+            color: #4CAF50;
+        }
+        .intro p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .menu-item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .menu-item img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+            margin-bottom: 15px;
+            background-color: #eee; /* Color de fondo para ver el espacio de la imagen */
+        }
+        .menu-item-description {
+            flex: 1;
+            min-width: 250px;
+        }
+        .menu-item-description h3 {
+            margin-top: 0;
+            color: #388E3C;
+        }
+        .menu-item-description ul {
+            padding-left: 20px;
+            text-align: left;
+        }
+        .menu-item-description ul li {
+            margin-bottom: 5px;
+        }
+        .whatsapp-contact {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #E8F5E9; /* Verde claro de fondo */
+            margin-top: 20px;
+        }
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366; /* Color oficial de WhatsApp */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+        .whatsapp-button:hover {
+            background-color: #1DA851;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .menu-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .menu-item img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .menu-item-description ul {
+                text-align: center; /* Centrar lista en móvil si se prefiere */
+                padding-left: 0; /* Quitar padding para centrar mejor */
+            }
+            header h1 {
+                font-size: 2em; /* Título un poco más pequeño en móviles */
+                margin: 0 10px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="fotos_comida/testlogo.jpg" alt="Logo Cocina Mia" style="height: 100px; width: auto;">
+            <h1>Cocina Mia</h1>
+            <img src="fotos_comida/testlogo.jpg" alt="Logo Cocina Mia" style="height: 100px; width: auto;">
+        </header>
+
+        <section class="intro">
+            <h2>¡Transforma tu rutina, bocado a bocado!</h2>
+            <p>
+                En <b>Cocina Mia</b>, creemos que comer saludable debe ser delicioso y sin complicaciones.
+                Descubre nuestros platillos fit, creados con ingredientes frescos y llenos de sabor,
+                diseñados para energizar tu día y ayudarte a alcanzar tus objetivos.
+                Olvídate de las horas en la cocina, ¡nosotros te lo llevamos!
+            </p>
+        </section>
+
+        <section class="menu-showcase">
+            <div class="menu-item">
+                <!-- Asegúrate de que 'ensalada2.jpg' sea el nombre correcto y esté en la carpeta 'fotos_comida' -->
+                <img src="fotos_comida/ensalada2.jpg" alt="Ensalada tropical">
+                <div class="menu-item-description">
+                    <h3>Ejemplo: Ensalada tropical</h3>
+                    <p>Suscríbete desde $599 pesos y recibe diariamente tus alimentos hasta la puerta de tu hogar u oficina. ¡Haz que se te antoje! ¿Sin tiempo para preparar tus comidas? Cocina Mia lo hace por ti, come saludable, práctico &amp; delicioso.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <!-- Asegúrate de que 'inscripcion.jpg' sea el nombre correcto y esté en la carpeta 'fotos_comida' -->
+                <img src="fotos_comida/inscripcion.jpg" alt="Proceso de Inscripción">
+                <div class="menu-item-description">
+                    <h3>Así es como trabajamos</h3>
+                    <p>Contamos con varios planes de alimentación semanales como:</p>
+                    <ul>
+                        <li>Fit Life= Desayuno, comida y cena $1,299 de lunes a viernes.</li>
+                        <li>Fit Lunch = 1 comida al día $599 de lunes a viernes.</li>
+                        <li>Fit Lunch+ = Desayuno+comida o comida+cena $950 de lunes a viernes.</li>
+                    </ul>
+                    <p>*Todos nuestros paquetes incluyen entrega a domicilio y entregamos un día antes con horario de 18:30 a 22:30.</p>
+                    <p>Los métodos de pago son depósito en Oxxo y Seven y transferencia bancaria, se envía el comprobante a nuestro contacto vía WhatsApp 8995016656.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="fotos_comida/menu1.jpg" alt="Menú Personalizado 1">
+                <div class="menu-item-description">
+                    <h3>Menú Personalizado 1</h3>
+                    <p>Deliciosa opción equilibrada con ingredientes frescos de temporada, ideal para tu almuerzo o cena.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="fotos_comida/menu2.jpg" alt="Menú Personalizado 2">
+                <div class="menu-item-description">
+                    <h3>Menú Personalizado 2</h3>
+                    <p>Un platillo lleno de energía y sabor, perfecto para quienes buscan mantenerse activos y saludables.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="fotos_comida/menu3.jpg" alt="Menú Personalizado 3">
+                <div class="menu-item-description">
+                    <h3>Menú Personalizado 3</h3>
+                    <p>Variedad y nutrición en este menú, diseñado para satisfacer tus antojos de forma saludable.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="fotos_comida/menu4.jpg" alt="Menú Personalizado 4">
+                <div class="menu-item-description">
+                    <h3>Menú Personalizado 4</h3>
+                    <p>La combinación perfecta de proteínas, carbohidratos complejos y grasas saludables para tu día.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="whatsapp-contact">
+            <h2>¿Listo/a para empezar?</h2>
+            <p>Contáctanos por WhatsApp para hacer tu pedido o resolver tus dudas.</p>
+            <a href="https://wa.me/5218995016656" class="whatsapp-button" target="_blank">¡Pedir por WhatsApp!</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Cocina Mia. Todos los derechos reservados.</p>
+            <p>Contacto: <a href="https://www.facebook.com/cocinamiareynosa" target="_blank">Facebook Cocina Mia Reynosa</a> | Cel: 8995016656</p>
+        </footer>
+    </div>
+
+</body>
+</html>
